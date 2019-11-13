@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="suite1" >
+	<test name="policy dg test">
+		
+	    <groups >
+			<run>
+				<include name="launch browser"/>
+				<include name="policy creation"/>
+				<include name="dg creation"/>
+			</run>
+		</groups>
+		
+		<classes >
+			<class name="testCases.HelperTest"/>
+			<class name="testCases.PolicyTest"/>
+			<class name="testCases.DGTabTest"/>
+			 
+		</classes>
+
+	</test>
+	
+	<test name="Notification Server">
+		<classes>
+			<class name="testCases.NotificationServerTest"/>
+		</classes>
+	</test>
+	
+	<test name="Log Level">
+		<classes>
+			<class name="testCases.LogsTest"/>	
+		</classes>
+	</test>"/>
+	
+	<test name="App Test">
+		<classes>
+			<class name="testCases.AppTest"/>	
+		</classes>
+	</test>"/>
+	<test name="policy delete test">
+		<groups >
+			<run>
+				<include name="policy deletion"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="testCases.PolicyTest"/>	
+		</classes>
+	</test>
+		
+</suite>

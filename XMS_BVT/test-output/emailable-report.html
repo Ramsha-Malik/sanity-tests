@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">suite1</th></tr><tr><td><a href="#t0">policy dg test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">55,604</td><td>dg creation, policy creation, launch browser</td><td></td></tr><tr class="stripe"><td><a href="#t1">Notification Server</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">16,721</td><td></td><td></td></tr><tr><td><a href="#t2">Log Level</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">11,559</td><td></td><td></td></tr><tr class="stripe"><td><a href="#t3">App Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">95,528</td><td></td><td></td></tr><tr><td><a href="#t4">policy delete test</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">41</td><td>policy deletion</td><td></td></tr><tr><th>Total</th><th class="num">4</th><th class="num attn">1</th><th class="num attn">1</th><th class="num">179,453</th><th colspan="2"></th></tr></table><table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">policy dg test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.DGTabTest</td><td><a href="#m0">dg_creation</a></td><td rowspan="1">1507006618910</td><td rowspan="1">17274</td></tr><tr class="passedodd"><td rowspan="1">testCases.PolicyTest</td><td><a href="#m1">add_policy</a></td><td rowspan="1">1507006589991</td><td rowspan="1">14649</td></tr></tbody><tbody id="t1"><tr><th colspan="4">Notification Server &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.NotificationServerTest</td><td><a href="#m2">addnotificationserver</a></td><td rowspan="1">1507006637421</td><td rowspan="1">15678</td></tr></tbody><tbody id="t2"><tr><th colspan="4">Log Level &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.LogsTest</td><td><a href="#m3">change_log_level</a></td><td rowspan="1">1507006657412</td><td rowspan="1">7452</td></tr></tbody><tbody id="t3"><tr><th colspan="4">App Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.AppTest</td><td><a href="#m4">add_app</a></td><td rowspan="1">1507006673014</td><td rowspan="1">87453</td></tr></tbody><tbody id="t4"><tr><th colspan="4">policy delete test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.PolicyTest</td><td><a href="#m5">before_method</a></td><td rowspan="1">1507006760620</td><td rowspan="1">12</td></tr><tr><th colspan="4">policy delete test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.PolicyTest</td><td><a href="#m6">del_policy</a></td><td rowspan="1">1507006760652</td><td rowspan="1">0</td></tr></tbody></table><h2>policy dg test</h2><h3 id="m0">testCases.DGTabTest#dg_creation</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">testCases.PolicyTest#add_policy</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Notification Server</h2><h3 id="m2">testCases.NotificationServerTest#addnotificationserver</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>Log Level</h2><h3 id="m3">testCases.LogsTest#change_log_level</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h2>App Test</h2><h3 id="m4">testCases.AppTest#add_app</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-G5O3F3J&apos;, ip: &apos;192.168.32.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Ramsha\AppData\Local\Temp\rust_mozprofile.zTQZov3J36yY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=15012, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 3c6fbd39-d780-4853-a0f8-c87663d217d1
+*** Element info: {Using=xpath, value=.//*[@id=&apos;mainBody&apos;]/div/section[2]/section[3]/button[3]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:673)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:669)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at testCases.AppTest.add_app(AppTest.java:56)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h2>policy delete test</h2><h3 id="m5">testCases.PolicyTest#before_method</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-G5O3F3J&apos;, ip: &apos;192.168.32.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Ramsha\AppData\Local\Temp\rust_mozprofile.zTQZov3J36yY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=15012, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 3c6fbd39-d780-4853-a0f8-c87663d217d1
+*** Element info: {Using=css selector, value=#nav_configure}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:673)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:669)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at testCases.PolicyTest.before_method(PolicyTest.java:82)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">testCases.PolicyTest#del_policy</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:42:44.417Z&apos;
+System info: host: &apos;DESKTOP-G5O3F3J&apos;, ip: &apos;192.168.32.72&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{moz:profile=C:\Users\Ramsha\AppData\Local\Temp\rust_mozprofile.zTQZov3J36yY, rotatable=false, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, platform=XP, specificationLevel=0, moz:accessibilityChecks=false, acceptInsecureCerts=false, browserVersion=55.0.3, platformVersion=10.0, moz:processID=15012, browserName=firefox, javascriptEnabled=true, platformName=XP}]
+Session ID: 3c6fbd39-d780-4853-a0f8-c87663d217d1
+*** Element info: {Using=css selector, value=#nav_configure}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:673)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:669)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at testCases.PolicyTest.before_method(PolicyTest.java:82)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

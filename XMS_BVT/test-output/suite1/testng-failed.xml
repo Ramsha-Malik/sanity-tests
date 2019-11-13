@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite1]">
+  <test name="App Test(failed)">
+    <classes>
+      <class name="testCases.AppTest">
+        <methods>
+          <include name="add_app"/>
+          <include name="before_method"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- testCases.AppTest -->
+    </classes>
+  </test> <!-- App Test(failed) -->
+  <test name="policy delete test(failed)">
+    <groups>
+      <run>
+        <include name="policy deletion"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.PolicyTest">
+        <methods>
+          <include name="del_policy"/>
+          <include name="before_method"/>
+        </methods>
+      </class> <!-- testCases.PolicyTest -->
+    </classes>
+  </test> <!-- policy delete test(failed) -->
+</suite> <!-- Failed suite [suite1] -->
